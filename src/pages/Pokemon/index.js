@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import * as S from './styled';
-import { useHistory } from 'react-router-dom';
+//import { useHistory } from 'react-router-dom';
 
 export default function Pokemon() {
 	const [ pokemon, setPokemon ] = useState([]);
 	const [ nome, setNome ] = useState('');
 	const [ imagem, setImagem ] = useState('');
+	//const history = useHistory();
 	useEffect(() => {
-		const history = useHistory();
 		let pokemonData = JSON.parse(localStorage.getItem('pokemon'));
-		if (pokemonData !=  null) {
+		//if (pokemonData !=  null) {
 			setNome(pokemonData.species.name);
 			setImagem(pokemonData.sprites.front_default);
 			setPokemon([1, 2, 3]);
 			console.log(pokemonData);
 			localStorage.clear();
-		} else {
-			history.push('/');
-		}
+		//} else {
+			//history.push('/');
+		//}
 	},[]);
 	return (
 	<S.Container>
