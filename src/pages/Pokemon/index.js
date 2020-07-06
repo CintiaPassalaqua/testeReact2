@@ -6,8 +6,8 @@ export default function Pokemon() {
 	const [ pokemon, setPokemon ] = useState([]);
 	const [ nome, setNome ] = useState('');
 	const [ imagem, setImagem ] = useState('');
-	const history = useHistory();
 	useEffect(() => {
+		const history = useHistory();
 		let pokemonData = JSON.parse(localStorage.getItem('pokemon'));
 		if (pokemonData !=  null) {
 			setNome(pokemonData.species.name);
