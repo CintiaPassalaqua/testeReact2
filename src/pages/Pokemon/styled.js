@@ -18,24 +18,33 @@ export const List = styled.ul`
 	list-style: none;
 	padding: 0;
 	font-family: sans-serif;
+	background: #EEE;
+	font-size: 1rem;
+	font-family: sans-serif;
+	display: block;
+	margin: .5rem 0;
+	background: #EEE;
+	color: #333;
+	padding: .5rem;
+	text-decoration: none;
 `;
 
 
 export const ListItem = styled.li`
-	margin: .5rem 0;
-	background: #000;
-	color: #fff;
+	margin: .1rem 0;
+	background: #FFF;
+	color: #333;
 	padding: .5rem;
+	padding-left: 1.5rem;
 `;
 
 
 export const ImagemPerfil = styled.img`
 	width: 25%;
-	background: #ddd;
+	background: #EEE;
 	padding: .5rem;
 	border-radius: .5rem;
 `;
-
 
 export const LinkHome = styled(Link)`
 	display: block;
@@ -45,5 +54,18 @@ export const LinkHome = styled(Link)`
 	background-color: #000;
 	padding: .5rem 0;
 	color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
+	font-family: sans-serif;
+`;
+
+export const Info = styled.p`
+	font-size: 1rem;
+	font-family: sans-serif;
+	display: block;
+	margin: .5rem 0;
+	background: #EEE;
+	color: #333;
+	padding: .5rem;
 	text-decoration: none;
 `;
